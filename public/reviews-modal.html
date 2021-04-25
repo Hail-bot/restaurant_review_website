@@ -1,0 +1,42 @@
+<div class="modal fade" id="reviewModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-center">
+                <h5 class="modal-title text-light" id="review">Review</h5>
+            </div>
+            <div class="modal-body">
+                <div id="emptyReview">No reviews yet. Help restaurants by leaving a review!</div>
+
+                <textarea id="textReview"class="form-control" placeholder="Write review..." rows="3"></textarea>  
+                <br>
+                <img src="images/icons8-star-48-empty.png" class="pop" value="1" onmouseover="rateIt(this)" />
+                <img src="images/icons8-star-48-empty.png" class="pop" value="2" onmouseover="rateIt(this)" />
+                <img src="images/icons8-star-48-empty.png" class="pop" value="3" onmouseover="rateIt(this)" />
+                <img src="images/icons8-star-48-empty.png" class="pop" value="4" onmouseover="rateIt(this)" />
+                <img src="images/icons8-star-48-empty.png" class="pop" value="5" onmouseover="rateIt(this)" />
+                <button type="button" class="btn btn-info pull-right" data-dismiss="modal" onclick="addReview()">Post</button>                             
+                <div class="clearfix"></div>                                                                    
+                <hr> 
+
+                <div class="container">                                                                                              
+                    <div class="row bootstrap">                                                                                         
+                        <div class="col-md-12">                                                                               
+                            <div class="comment-wrapper">                                                                               
+                                <div>                                                                                                   
+                                    <div class="panel-body">                                                                            
+                                    <ul id="reviewList">
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

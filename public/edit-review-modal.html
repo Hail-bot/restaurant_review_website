@@ -1,0 +1,23 @@
+<div class="modal fade" id="editReviewModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-center">
+                <h5 class="modal-title text-light" id="review">Edit Review</h5>
+            </div>
+            <div class="modal-body">
+                <textarea id="editTextReview"class="form-control" rows="3"></textarea>  
+                <br>
+                <img src="images/icons8-star-48-empty.png" class="editpop" value="1" onmouseover="rateIt(this)" />
+                <img src="images/icons8-star-48-empty.png" class="editpop" value="2" onmouseover="rateIt(this)" />
+                <img src="images/icons8-star-48-empty.png" class="editpop" value="3" onmouseover="rateIt(this)" />
+                <img src="images/icons8-star-48-empty.png" class="editpop" value="4" onmouseover="rateIt(this)" />
+                <img src="images/icons8-star-48-empty.png" class="editpop" value="5" onmouseover="rateIt(this)" />
+                <button type="button" class="btn btn-info pull-right" data-dismiss="modal" onclick="updateReview()">Edit</button>                             
+                <div class="clearfix"></div>                                                                    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/w3.js"></script>
+    <script src="js/userprofile.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/restaurants.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/checktoken.js"></script>
+</head>
+<body>
+    <div w3-include-html="top-navigation.html"></div>
+    <div w3-include-html="register-modal.html"></div>
+    <div w3-include-html="success-modal.html"></div>
+    <div w3-include-html="fail-modal.html"></div>
+    <div w3-include-html="login-modal.html"></div>
+    <div w3-include-html="restaurant-modal.html"></div>
+    <div w3-include-html="reviews-modal.html"></div>
+    <div w3-include-html="edit-review-modal.html"></div>
+    <div>
+        <div>
+            <div class="search">
+               <input type="text" class="searchTerm" id="searchTerm"placeholder="Search Full Restaurant Name, no capitalization needed">
+               <button type="submit" class="searchButton" onclick="search()">
+                 <img src="images/search-24px.svg"height="40px"width="40px"></img>
+              </button>
+            </div>
+         </div>
+    </div>
+    <div id="specificRestaurant">
+        
+    </div>
+</body>
+<script>
+    w3.includeHTML();
+    checkToken();
+    userDetails();
+</script>
+</html>

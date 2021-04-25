@@ -1,0 +1,48 @@
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body px-5">
+                <form>
+                    <div class="form-group">
+                        <label for="input a LoginID">LoginID</label>
+                        <input type="email" class="form-control" id="username" aria-describedby="emailHelp"
+                            placeholder="LoginID">
+                    </div>
+                    <div class="form-group">
+                        <label for="input a password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="input a first name">First Name</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="input a last name">Last Name</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="input your address">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="input your email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="input your phone number">Telephone Number</label>
+                        <input type="text" class="form-control" id="telephonenumber" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="male" name="gender" value="1">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="2">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="unspecified" name="gender" value="0">
+                        <label for="unspecified">I prefer not to say</label><br>
+                    </div>
+                    <button onclick="registerMe();" type="button" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

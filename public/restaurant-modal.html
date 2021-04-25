@@ -1,0 +1,39 @@
+<!-- this is a structure of Bootstrap Modal -->
+<div class="modal fade" id="restaurantModal" tabindex="-1" role="modal popup">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-center">
+                <h4 class="modal-title text-light" id="restaurantName">Modal title</h3>
+                <button type="button" class="close bg-white" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row text-center">
+                    <div class="col-xs-5">
+                        <img class="img-fluid img-thumbnail" id="restaurantPic">
+                    </div>
+                    
+                        <table class="table table-hover">
+                            <tr>
+                                <td><span class="badge badge-pill badge-dark font-weight-bold">Address</span></td>
+                                <td id="restaurantAddress"></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-pill badge-dark font-weight-bold">Operating Hours</span></td>
+                                <td id="restaurantHours" style=' width: 200px; word-break: break-all; word-wrap: break-word;'></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-pill badge-dark font-weight-bold">Telephone Number</span></td>
+                                <td id="restaurantPhone"></td>
+                            </tr>
+                        </table>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

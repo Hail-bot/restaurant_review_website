@@ -1,0 +1,56 @@
+<nav>
+    <a href="/restaurants.html">
+        <img src ="images/logo.png" id="logo" alt='website logo and home page'>
+    </a>
+</nav>
+<nav>
+    <ul class="nav nav-pills justify-content-end">
+        <li id="registerMenu" class='nav-item'>
+            <a class="nav-link registerlogin" href="#" id="register" data-toggle="modal" data-target="#registerModal">
+            Register
+            </a>
+        </li>
+        <li id="loginMenu" class="nav-item">
+            <a class="nav-link registerlogin" href="#" id="login" data-toggle="modal" data-target="#loginModal">
+            Login
+            </a>
+        </li>
+        <li id="logoutMenu" class="nav-item" style="display:none;">
+            <a class="nav-link registerlogin" href="#" id="logout" onclick="logoutMe()">
+            Logout
+            </a>
+        </li>
+        <li id="userProfile" class="nav-item"style='display:none;'>
+            <a class="nav-link registerlogin" href="userProfile.html">
+            User Profile
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/search.html" onclick="search()">
+            <img src="images/search-24px.svg" id="search" alt="search">
+            </a>
+        </li>
+    </ul>
+</nav>
+<nav>
+    <ul class="nav bg-dark nav-pills nav-fill">
+        <li class="nav-item box">
+            <a class="nav-link navbarlink" href="/listChineseRestaurants.html">Chinese</a>
+        </li>
+        <li class="nav-item box">
+            <a class="nav-link navbarlink" href="/listWesternRestaurants.html">Western</a>
+        </li>
+        <li class="nav-item box">
+            <a class="nav-link navbarlink" href="/listJapaneseRestaurants.html">Japanese</a>
+        </li>
+        <li class="nav-item box">
+            <a class="nav-link navbarlink" href="/listSeafoodRestaurants.html">Seafood</a>
+        </li>
+        <li class="nav-item box">
+            <a class="nav-link navbarlink" href="/listSteakhouseRestaurants.html">Steakhouse</a>
+        </li>
+        <li class="nav-item box">
+            <a class="nav-link navbarlink" href="/listBuffetRestaurants.html">Buffet</a>
+        </li>
+    </ul>
+</nav>
